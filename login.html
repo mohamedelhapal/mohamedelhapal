@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - معرض أعمالي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">MyPortfolio</a>
+                </div>
+                
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" data-translate="home">الرئيسية</a></li>
+                    <li><a href="about.html" data-translate="about">نبذة عني</a></li>
+                    <li><a href="index.html#projects" data-translate="projects">المشاريع</a></li>
+                    <li><a href="index.html#contact" data-translate="contact">اتصل بنا</a></li>
+                    <li class="mobile-only">
+                        <div class="theme-toggler">
+                            <button class="theme-btn active" onclick="toggleTheme('light')" data-translate="light">فاتح</button>
+                            <button class="theme-btn" onclick="toggleTheme('dark')" data-translate="dark">مظلم</button>
+                        </div>
+                    </li>
+                    <li class="mobile-only">
+                        <div class="lang-switcher">
+                            <button class="lang-btn active" onclick="changeLanguage('ar')">العربية</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="header-controls">
+                    <div class="theme-toggler desktop-only">
+                        <button class="theme-btn active" onclick="toggleTheme('light')" data-translate="light">فاتح</button>
+                        <button class="theme-btn" onclick="toggleTheme('dark')" data-translate="dark">مظلم</button>
+                    </div>
+                    
+                    <div class="lang-switcher desktop-only">
+                        <button class="lang-btn active" onclick="changeLanguage('ar')">العربية</button>
+                        <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                    </div>
+                    
+                    <div class="auth-buttons" id="authButtons"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="loginFormContainer" class="form-container"></div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <span data-translate="allRights">جميع الحقوق محفوظة</span></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

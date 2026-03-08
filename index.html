@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - معرض أعمالي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">MyPortfolio</a>
+                </div>
+                
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" data-translate="home">الرئيسية</a></li>
+                    <li><a href="#about" data-translate="about">نبذة عني</a></li>
+                    <li><a href="#projects" data-translate="projects">المشاريع</a></li>
+                    <li><a href="#contact" data-translate="contact">اتصل بنا</a></li>
+                    <li class="mobile-only">
+                        <div class="theme-toggler">
+                            <button class="theme-btn active" onclick="toggleTheme('light')" data-translate="light">فاتح</button>
+                            <button class="theme-btn" onclick="toggleTheme('dark')" data-translate="dark">مظلم</button>
+                        </div>
+                    </li>
+                    <li class="mobile-only">
+                        <div class="lang-switcher">
+                            <button class="lang-btn active" onclick="changeLanguage('ar')">العربية</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="header-controls">
+                    <div class="theme-toggler desktop-only">
+                        <button class="theme-btn active" onclick="toggleTheme('light')" data-translate="light">فاتح</button>
+                        <button class="theme-btn" onclick="toggleTheme('dark')" data-translate="dark">مظلم</button>
+                    </div>
+                    
+                    <div class="lang-switcher desktop-only">
+                        <button class="lang-btn active" onclick="changeLanguage('ar')">العربية</button>
+                        <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                    </div>
+                    
+                    <div class="auth-buttons" id="authButtons"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-translate="heroTitle">أهلاً، أنا محمد الحبال</h1>
+                <p data-translate="heroSubtitle">مبرمج ويب ومطور مشاريع إبداعية - مصمم وجرافيك ديزاين</p>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="about">نبذة عني</h2>
+                
+                <div class="about-wrapper">
+                    <div class="about-image">
+                        <div class="profile-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <h3 data-translate="aboutTitle">أهلاً، أنا محمد</h3>
+                        <p class="about-text" data-translate="aboutDesc1">
+                            مطور ويب شغوف ببناء تطبيقات وحلول رقمية مبتكرة. أمتلك خبرة في العديد من التقنيات الحديثة  في عالم البرمجة.
+                        </p>
+                        <p class="about-text" data-translate="aboutDesc2">
+                            أؤمن بقوة البرمجيات في تغيير العالم وتحسين حياة الناس. على مر السنوات، عملت على مشاريع متنوعة مع فرق مختلفة، مما صقل مهاراتي في العمل الجماعي وحل المشكلات.
+                        </p>
+                        
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-translate="location"> مصر - الغربيه -كفر الزيات</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-code"></i>
+                                <span data-translate="experience">خبرة: +3 سنوات </span>
+                            </div>
+                          <!--  <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span data-translate="education">بكالوريوس حاسبات ومعلومات</span>
+                            </div>-->
+                            <div class="info-item">
+                                <i class="fas fa-language"></i>
+                                <span data-translate="languages">العربية (اللغة الأم)، الإنجليزية (متقدم)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-section">
+                            <h4 data-translate="skills">المهارات</h4>
+                            <div class="skills-grid">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="myProjects">مشاريعي</h2>
+                <div class="projects-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="contactMe">تواصل معي</h2>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3 data-translate="contactInfo">معلومات الاتصال</h3>
+                        <p data-translate="contactInfoDesc">يمكنك التواصل معي عبر</p>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span> مصر - الغربيه - كفر الزيات </span>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+20 1210284508  </span>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mohamedelhapal2009@example.com</span>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3 data-translate="sendMessage">أرسل لي رسالة</h3>
+                        
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-translate="yourName">الاسم</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-translate="yourEmail">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" data-translate="phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" data-translate="subject">الموضوع</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-translate="message">الرسالة</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" data-translate="send">إرسال</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <span data-translate="allRights">جميع الحقوق محفوظة</span></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

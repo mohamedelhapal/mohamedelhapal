@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبذة عني - معرض أعمالي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">MyPortfolio</a>
+                </div>
+                
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" data-translate="home">الرئيسية</a></li>
+                    <li><a href="about.html" data-translate="about">نبذة عني</a></li>
+                    <li><a href="index.html#projects" data-translate="projects">المشاريع</a></li>
+                    <li><a href="index.html#contact" data-translate="contact">اتصل بنا</a></li>
+                    <li class="mobile-only">
+                        <div class="theme-toggler">
+                            <button class="theme-btn active" onclick="toggleTheme('light')" data-translate="light">فاتح</button>
+                            <button class="theme-btn" onclick="toggleTheme('dark')" data-translate="dark">مظلم</button>
+                        </div>
+                    </li>
+                    <li class="mobile-only">
+                        <div class="lang-switcher">
+                            <button class="lang-btn active" onclick="changeLanguage('ar')">العربية</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="header-controls">
+                    <div class="theme-toggler desktop-only">
+                        <button class="theme-btn active" onclick="toggleTheme('light')" data-translate="light">فاتح</button>
+                        <button class="theme-btn" onclick="toggleTheme('dark')" data-translate="dark">مظلم</button>
+                    </div>
+                    
+                    <div class="lang-switcher desktop-only">
+                        <button class="lang-btn active" onclick="changeLanguage('ar')">العربية</button>
+                        <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                    </div>
+                    
+                    <div class="auth-buttons" id="authButtons"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="about">نبذة عني</h2>
+                
+                <div class="about-wrapper">
+                    <div class="about-image">
+                        <div class="profile-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <h3 data-translate="aboutTitle">أهلاً، أنا أحمد</h3>
+                        <p class="about-text" data-translate="aboutDesc1">
+                            مطور ويب شغوف ببناء تطبيقات وحلول رقمية مبتكرة. أمتلك خبرة في العديد من التقنيات الحديثة وأسعى دائمًا لتعلم كل جديد في عالم البرمجة.
+                        </p>
+                        <p class="about-text" data-translate="aboutDesc2">
+                            أؤمن بقوة البرمجيات في تغيير العالم وتحسين حياة الناس. على مر السنوات، عملت على مشاريع متنوعة مع فرق مختلفة، مما صقل مهاراتي في العمل الجماعي وحل المشكلات.
+                        </p>
+                        
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-translate="location">القاهرة، مصر</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-code"></i>
+                                <span data-translate="experience">خبرة: 5+ سنوات</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span data-translate="education">بكالوريوس حاسبات ومعلومات</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-language"></i>
+                                <span data-translate="languages">العربية (اللغة الأم)، الإنجليزية (متقدم)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-section">
+                            <h4 data-translate="skills">المهارات</h4>
+                            <div class="skills-grid">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">UI/UX</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about-buttons">
+                            <a href="index.html#contact" class="btn btn-primary" data-translate="contactMe">تواصل معي</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <span data-translate="allRights">جميع الحقوق محفوظة</span></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
